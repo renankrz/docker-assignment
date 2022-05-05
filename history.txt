@@ -6,3 +6,5 @@ docker container stop my-caddy-server
 docker container ls -a
 docker container rm my-caddy-server
 docker run --name my-caddy-server -p 8080:80 -v ${PWD}/www:/usr/src/pages -d my-caddy-server
+docker container stop my-caddy-server
+docker container rm my-caddy-server
